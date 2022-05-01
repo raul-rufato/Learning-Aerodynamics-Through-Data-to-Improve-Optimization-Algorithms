@@ -11,7 +11,7 @@ def parameterise_airfoil(oldairfoil):
     
     # modes from the Database:
     # Bouhlel, M. A., He, S., and Martins, J. R. R. A., “mSANN Model Benchmarks,” Mendeley Data, 2019. https://doi.org/10.17632/ngpd634smf.1
-    modes = np.loadtxt("C:/Users/Mario/OneDrive/Universität/Semester 8 21 SoSe/PIR/Material/Subsonic/modes.subsonic")
+    modes = np.loadtxt("db_modescoef.txt")
     xcors = modes[0,:].copy()
     nte = 15
     xnew = xcors[nte+1:0-nte-1].copy()
