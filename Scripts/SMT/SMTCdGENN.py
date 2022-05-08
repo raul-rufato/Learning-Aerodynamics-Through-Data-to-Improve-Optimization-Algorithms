@@ -16,7 +16,7 @@ def getData():
     # data from the Database:
     # Bouhlel, M. A., He, S., and Martins, J. R. R. A., “mSANN Model Benchmarks,” Mendeley Data, 2019. https://doi.org/10.17632/ngpd634smf.1
     # dataset different from Keras one: some derivatives were missing
-    with open('dataSMTCd.csv', 'r') as file:
+    with open('/Learning-Aerodynamics-Through-Data-to-Improve-Optimization-Algorithms/Scripts/SMT/dataSMTCd.csv', 'r') as file:
         reader = csv.reader(file, delimiter=";")
         values = np.array(list(reader), dtype = np.float32)
         dim_values = values.shape
