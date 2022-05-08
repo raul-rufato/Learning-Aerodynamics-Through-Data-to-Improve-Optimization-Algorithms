@@ -16,7 +16,7 @@ def getData():
     # data from the Database:
     # Bouhlel, M. A., He, S., and Martins, J. R. R. A., “mSANN Model Benchmarks,” Mendeley Data, 2019. https://doi.org/10.17632/ngpd634smf.1
     # dataset different from Keras one: some derivatives were missing
-    with open('C:/Users/Mario/OneDrive/Universität/Semester 8 21 SoSe/PIR/Material/Subsonic/SMT/dataSMTCd.csv', 'r') as file:
+    with open('dataSMTCd.csv', 'r') as file:
         reader = csv.reader(file, delimiter=";")
         values = np.array(list(reader), dtype = np.float32)
         dim_values = values.shape
@@ -25,7 +25,7 @@ def getData():
     # gets the gradient information
     # data from the Database:
     # Bouhlel, M. A., He, S., and Martins, J. R. R. A., “mSANN Model Benchmarks,” Mendeley Data, 2019. https://doi.org/10.17632/ngpd634smf.1
-    with open ("C:/Users/Mario/OneDrive/Universität/Semester 8 21 SoSe/PIR/Material/Subsonic/SMT/DataDySMTCd.csv", "r") as file:
+    with open ("DataDySMTCd.csv", "r") as file:
         reader = csv.reader(file, delimiter=";")
         dy = np.array(list(reader), dtype = np.float32)
         return x, y, dy             
